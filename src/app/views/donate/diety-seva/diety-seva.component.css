@@ -1,0 +1,34 @@
+.main-container{
+    padding: 30px;
+    padding-left: 100px;
+}
+
+.donation-container{
+    padding: 20px;
+    margin: 10px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr{
+    border: 1px solid;
+}
+
+td{
+    border: 1px solid;
+    padding: 16px 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.donate-button-container{
+    text-align: center;
+}
+
+.donate-button{
+    cursor: pointer;
+    font-size: 17px;
+}

@@ -1,0 +1,36 @@
+.main-body{
+    padding: 10px 40px;
+}
+
+.scheme-body{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.scheme{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    min-height: 200px;
+    margin: 5px 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.image, .name{
+    display: block;
+    width: 100%;
+}
+
+.name{
+    cursor: pointer;
+    text-align: center;
+    padding: 15px 5px;
+    align-self: flex-end;
+}  
+
+.name:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,23 @@
+<div>
+    <div class="header">
+        <div class="navigationbar">
+            <div class="logo"></div>
+            <ul class="navList">
+                <li class="listItem"
+                    nz-popover
+                    nzPopoverContent="{{ option.label }}"
+                    nzPopoverPlacement="bottom"
+                    nzPopoverTrigger="hover"
+                    *ngFor = 'let option of menu' 
+                    routerLink='{{ option.route }}'>
+                    {{ option.label }}
+                </li>
+                <!-- <li class="listItem" routerLink='/'>Home</li>
+                <li class="listItem" routerLink='/about-us'>About</li>
+                <li class="listItem">Temple</li>
+                <li class="listItem" routerLink='/donate'>Donate</li>
+                <li class="listItem">Contact</li> -->
+            </ul>
+        </div>
+    </div>
+</div>

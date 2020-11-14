@@ -1,0 +1,10 @@
+<div class="main-body">
+    <div class="scheme-body">
+        <div class="scheme" *ngFor = 'let scheme of donationSchemes'>
+            <div class="image">
+                <img src="../../../pics/logo-iskcon.jpg" alt="wrong path">
+            </div>
+            <div class="name" routerLink='{{ scheme.sevaURL }}'> {{ scheme.name }}</div>
+        </div>
+    </div>
+</div>

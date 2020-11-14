@@ -1,0 +1,27 @@
+<div class="form-container">
+    <form [formGroup]="form" class="form">
+        <div class="row title">Fill requires fields to proceed</div>
+        <div class="row">
+            <div class="name-container field-container">
+                <input class='input' type="text" placeholder="Name" formControlName='name'>
+            </div>
+            <div class="mobile-container field-container">
+                <input class='input' type="text" placeholder="mobile number" formControlName='mobile_number'>
+            </div>
+        </div>
+        <div class="row">
+            <div class="email-container field-container">
+                <input class='input' type="text" placeholder="email" formControlName='email_id'>
+            </div>
+            <div class="occassion-container field-container">
+                <input class='input' type="text" placeholder="enter occassion" formControlName='occassion'>
+            </div>
+        </div>
+        <div class="row submit-container">
+            <button class="submit-button" (click)='onNext()'>Next</button>
+        </div>
+        <div class="row close-button-container">
+            <button class="close-button">Close</button>
+        </div>
+    </form>
+</div>

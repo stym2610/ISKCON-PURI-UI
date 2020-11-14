@@ -1,0 +1,13 @@
+<div class="main-container">
+    <div class="donation-container">
+        <table>
+            <tr *ngFor='let donation of donationTypes'>
+                <td>{{ donation.label }}</td>
+                <td>₹ {{ donation.amount }}</td>
+                <td class="donate-button-container">
+                    <button class="donate-button">DONATE NOW</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
