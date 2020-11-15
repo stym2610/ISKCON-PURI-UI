@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { DonateComponent } from './views/donate/donate.component';
-import { NzPopoverModule } from 'ng-zorro-antd/popover';
 import { AboutIskconComponent } from './views/about-iskcon/about-iskcon.component';
 import { AboutIskconPuriComponent } from './views/about-iskcon-puri/about-iskcon-puri.component';
 import { OurMissionComponent } from './views/our-mission/our-mission.component';
@@ -17,6 +16,9 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DietySevaComponent } from './views/donate/diety-seva/diety-seva.component';
 import { DonateTemplateComponent } from './reusable/donate-template/donate-template.component';
+
+import { NzPopoverModule } from 'ng-zorro-antd/popover';
+import { NzModalModule } from 'ng-zorro-antd/modal';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import { DonateTemplateComponent } from './reusable/donate-template/donate-templ
   imports: [
     BrowserModule,
     NzPopoverModule,
+    NzModalModule,
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,

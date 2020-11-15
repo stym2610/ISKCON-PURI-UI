@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NzModalService } from 'ng-zorro-antd/modal';
+import { FormOverleyComponent } from '../form-overley/form-overley.component';
 
 @Component({
   selector: 'diety-seva',
@@ -16,8 +18,14 @@ export class DietySevaComponent implements OnInit {
   ]
 
 
-  constructor() { }
+  constructor(private modalService: NzModalService) { }
 
   ngOnInit(): void { }
+
+  showModal(amount){
+    this.modalService.create({
+      nzContent: FormOverleyComponent
+    });
+  }
 
 }

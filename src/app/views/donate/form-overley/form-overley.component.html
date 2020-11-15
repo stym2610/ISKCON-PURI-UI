@@ -17,11 +17,16 @@
                 <input class='input' type="text" placeholder="enter occassion" formControlName='occassion'>
             </div>
         </div>
+        <div class="row">
+            <div class="amount-container field-container">
+                <input type="text" class="input amount-box" formControlName='amount' readonly>
+            </div>
+        </div>
         <div class="row submit-container">
             <button class="submit-button" (click)='onNext()'>Next</button>
         </div>
         <div class="row close-button-container">
-            <button class="close-button">Close</button>
+            <button class="close-button" (click)='onClose()'>Close</button>
         </div>
     </form>
 </div>

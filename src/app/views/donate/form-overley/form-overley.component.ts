@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { NzModalRef } from 'ng-zorro-antd/modal';
 
 @Component({
   selector: 'app-form-overley',
@@ -10,9 +11,10 @@ export class FormOverleyComponent implements OnInit {
 
   form: FormGroup;
   isSubmitted: boolean = false;
+  @Input('donationAmount') donationAmount = 1200;
   
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private modal: NzModalRef) { }
 
   ngOnInit(){
     this.form = this.createForm();
@@ -23,13 +25,19 @@ export class FormOverleyComponent implements OnInit {
       name: [''],
       mobile_number: [''],
       email_id: [''],
-      occassion: ['']
+      occassion: [''],
+      amount: [this.donationAmount]
     });
     return formModal;
   }
 
   onNext(){
     console.log(this.form.value);
+    this.modal.destroy();
+  }
+
+  onClose(){
+    this.modal.destroy();
   }
 
 }

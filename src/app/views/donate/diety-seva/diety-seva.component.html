@@ -5,7 +5,7 @@
                 <td>{{ donation.label }}</td>
                 <td>₹ {{ donation.amount }}</td>
                 <td class="donate-button-container">
-                    <button class="donate-button">DONATE NOW</button>
+                    <button class="donate-button"  (click)='showModal(donation.amount)'>DONATE NOW</button>
                 </td>
             </tr>
         </table>
